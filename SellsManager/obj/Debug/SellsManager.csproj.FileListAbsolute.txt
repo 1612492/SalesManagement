@@ -1,0 +1,17 @@
+C:\Users\User\source\repos\1612492_1612449\SellsManager\bin\Debug\SellsManager.exe.config
+C:\Users\User\source\repos\1612492_1612449\SellsManager\bin\Debug\SellsManager.exe
+C:\Users\User\source\repos\1612492_1612449\SellsManager\bin\Debug\SellsManager.pdb
+C:\Users\User\source\repos\1612492_1612449\SellsManager\obj\Debug\SellsManager.csprojAssemblyReference.cache
+C:\Users\User\source\repos\1612492_1612449\SellsManager\obj\Debug\SellsManager.GUI.Login.resources
+C:\Users\User\source\repos\1612492_1612449\SellsManager\obj\Debug\SellsManager.Properties.Resources.resources
+C:\Users\User\source\repos\1612492_1612449\SellsManager\obj\Debug\SellsManager.csproj.GenerateResource.cache
+C:\Users\User\source\repos\1612492_1612449\SellsManager\obj\Debug\SellsManager.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\1612492_1612449\SellsManager\obj\Debug\SellsManager.exe
+C:\Users\User\source\repos\1612492_1612449\SellsManager\obj\Debug\SellsManager.pdb
+C:\Users\User\source\repos\1612492_1612449\SellsManager\obj\Debug\SellsManager.GUI.Dashboard.resources
+C:\Users\User\source\repos\1612492_1612449\SellsManager\obj\Debug\SellsManager.GUI.Products.resources
+C:\Users\User\source\repos\1612492_1612449\SellsManager\obj\Debug\SellsManager.GUI.Provider.resources
+C:\Users\User\source\repos\1612492_1612449\SellsManager\obj\Debug\SellsManager.GUI.Customers.resources
+C:\Users\User\source\repos\1612492_1612449\SellsManager\obj\Debug\SellsManager.GUI.Promotion.resources
+C:\Users\User\source\repos\1612492_1612449\SellsManager\obj\Debug\SellsManager.GUI.Account.resources
+C:\Users\User\source\repos\1612492_1612449\SellsManager\obj\Debug\SellsManager.GUI.Seller.resources
