@@ -25,7 +25,7 @@ namespace SellsManager.DAL
             try
             {
                 con.Open();
-                string query = string.Format("INSERT INTO Account(name, gender, birthday, addr, idCard, phone, startWorking, position, username, pass) VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}')",
+                string query = string.Format("INSERT INTO Account(name, gender, birthday, addr, idCard, phone, startWorking, position, username, pass) VALUES (N'{0}', N'{1}', '{2}', N'{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}')",
                     pro.Name, pro.Gender, pro.Birthday, pro.Addr, pro.IdCard, pro.Phone, pro.StartWorking, pro.Position, pro.Username, pro.Password);
                 SqlCommand cmd = new SqlCommand(query, con);
 
@@ -50,7 +50,7 @@ namespace SellsManager.DAL
             try
             {
                 con.Open();
-                string query = string.Format("UPDATE Account SET name = '{0}', gender = '{1}', birthday = '{2}', addr = '{3}', idCard = '{4}', phone = '{5}', startWorking = '{6}', position = '{7}', username = '{8}', pass = '{9}' WHERE id = {10}",
+                string query = string.Format("UPDATE Account SET name = N'{0}', gender = N'{1}', birthday = '{2}', addr = N'{3}', idCard = '{4}', phone = '{5}', startWorking = '{6}', position = '{7}', username = '{8}', pass = '{9}' WHERE id = {10}",
                     pro.Name, pro.Gender, pro.Birthday, pro.Addr, pro.IdCard, pro.Phone, pro.StartWorking, pro.Position, pro.Username, pro.Password, pro.Id);
                 SqlCommand cmd = new SqlCommand(query, con);
 
@@ -75,7 +75,7 @@ namespace SellsManager.DAL
             try
             {
                 con.Open();
-                string query = string.Format("DELETE FROM Account WHERE id = {0})", id);
+                string query = string.Format("DELETE FROM Account WHERE id = {0}", id);
                 SqlCommand cmd = new SqlCommand(query, con);
 
                 if (cmd.ExecuteNonQuery() > 0)

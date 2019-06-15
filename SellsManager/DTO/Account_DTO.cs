@@ -11,16 +11,16 @@ namespace SellsManager.DTO
         private int id;
         private string name;
         private string gender;
-        private DateTime birthday;
+        private string birthday;
         private string addr;
         private string idCard;
         private string phone;
-        private DateTime startWorking;
+        private string startWorking;
         private string position;
         private string username;
         private string password;
 
-        public Account_DTO(int id, string name, string gender, DateTime birthday, string addr, string idCard, string phone, DateTime startWorking, string position, string username, string password)
+        public Account_DTO(int id, string name, string gender, string birthday, string addr, string idCard, string phone, string startWorking, string position, string username, string password)
         {
             this.id = id;
             this.name = name;
@@ -38,11 +38,11 @@ namespace SellsManager.DTO
         public int Id { get => id; set => id = value; }
         public string Name { get => name; set => name = value; }
         public string Gender { get => gender; set => gender = value; }
-        public DateTime Birthday { get => birthday; set => birthday = value; }
+        public string Birthday { get => birthday; set => birthday = value; }
         public string Addr { get => addr; set => addr = value; }
         public string IdCard { get => idCard; set => idCard = value; }
         public string Phone { get => phone; set => phone = value; }
-        public DateTime StartWorking { get => startWorking; set => startWorking = value; }
+        public string StartWorking { get => startWorking; set => startWorking = value; }
         public string Position { get => position; set => position = value; }
         public string Username { get => username; set => username = value; }
         public string Password { get => password; set => password = value; }

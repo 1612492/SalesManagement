@@ -13,9 +13,19 @@ namespace SellsManager.BUS
     {
         Product_DAL proDAL = new Product_DAL();
 
+        public DataTable LoadCategory()
+        {
+            return proDAL.LoadCategory();
+        }
+
         public DataTable Load()
         {
             return proDAL.Load();
+        }
+
+        public bool New(Product_DTO proDTO)
+        {
+            return proDAL.New(proDTO);
         }
 
         public bool Add(Product_DTO proDTO, int num)
@@ -26,11 +36,6 @@ namespace SellsManager.BUS
         public bool Edit(Product_DTO proDTO)
         {
             return proDAL.Edit(proDTO);
-        }
-
-        public bool Delete(int id)
-        {
-            return proDAL.Delete(id);
         }
     }
 }

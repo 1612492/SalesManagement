@@ -35,7 +35,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
-            this.llbForgetPass = new System.Windows.Forms.LinkLabel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -102,18 +101,6 @@
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // llbForgetPass
-            // 
-            this.llbForgetPass.AutoSize = true;
-            this.llbForgetPass.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(150)))), ((int)(((byte)(0)))));
-            this.llbForgetPass.Location = new System.Drawing.Point(406, 614);
-            this.llbForgetPass.Name = "llbForgetPass";
-            this.llbForgetPass.Size = new System.Drawing.Size(156, 21);
-            this.llbForgetPass.TabIndex = 6;
-            this.llbForgetPass.TabStop = true;
-            this.llbForgetPass.Text = "Forgot Password?";
-            this.llbForgetPass.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(1)))));
@@ -146,7 +133,6 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1182, 755);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.llbForgetPass);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -172,7 +158,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.LinkLabel llbForgetPass;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btnClose;
     }

@@ -10,13 +10,13 @@ namespace SellsManager.DTO
     {
         private int id;
         private string name;
-        private DateTime dateStart;
-        private DateTime dateEnd;
+        private string dateStart;
+        private string dateEnd;
         private int product;
         private int endow;
         private string description;
 
-        public Promotion_DTO(int id, string name, DateTime dateStart, DateTime dateEnd, int product, int endow, string description)
+        public Promotion_DTO(int id, string name, string dateStart, string dateEnd, int product, int endow, string description)
         {
             this.id = id;
             this.name = name;
@@ -29,8 +29,8 @@ namespace SellsManager.DTO
 
         public int Id { get => id; set => id = value; }
         public string Name { get => name; set => name = value; }
-        public DateTime DateStart { get => dateStart; set => dateStart = value; }
-        public DateTime DateEnd { get => dateEnd; set => dateEnd = value; }
+        public string DateStart { get => dateStart; set => dateStart = value; }
+        public string DateEnd { get => dateEnd; set => dateEnd = value; }
         public int Product { get => product; set => product = value; }
         public int Endow { get => endow; set => endow = value; }
         public string Description { get => description; set => description = value; }

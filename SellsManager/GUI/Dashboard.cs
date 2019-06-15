@@ -15,6 +15,9 @@ namespace SellsManager.GUI
         public Dashboard()
         {
             InitializeComponent();
+            lblUsername.Text = Login.username;
+            Category category = new Category();
+            addToPanelControl(category);
         }
 
         private void moveSlidePanel(Control btn)
@@ -30,9 +33,11 @@ namespace SellsManager.GUI
             panelControl.Controls.Add(c);
         }
 
-        private void btnHome_Click(object sender, EventArgs e)
+        private void btnCategory_Click(object sender, EventArgs e)
         {
-            moveSlidePanel(btnHome);
+            moveSlidePanel(btnCategory);
+            Category category = new Category();
+            addToPanelControl(category);
         }
 
         private void btnProducts_Click(object sender, EventArgs e)
@@ -49,13 +54,6 @@ namespace SellsManager.GUI
             addToPanelControl(provider);
         }
 
-        private void btnCustomers_Click(object sender, EventArgs e)
-        {
-            moveSlidePanel(btnCustomers);
-            Customers customers = new Customers();
-            addToPanelControl(customers);
-        }
-
         private void btnPromotion_Click(object sender, EventArgs e)
         {
             moveSlidePanel(btnPromotion);
@@ -66,6 +64,8 @@ namespace SellsManager.GUI
         private void btnStatistic_Click(object sender, EventArgs e)
         {
             moveSlidePanel(btnStatistic);
+            Statistics statistics = new Statistics();
+            addToPanelControl(statistics);
         }
 
         private void btnAccount_Click(object sender, EventArgs e)

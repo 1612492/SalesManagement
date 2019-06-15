@@ -13,9 +13,19 @@ namespace SellsManager.BUS
     {
         Provider_DAL proDAL = new Provider_DAL();
 
+        public DataTable LoadProduct()
+        {
+            return proDAL.LoadProduct();
+        }
+
         public DataTable Load()
         {
             return proDAL.Load();
+        }
+
+        public bool New(Provider_DTO proDTO)
+        {
+            return proDAL.New(proDTO);
         }
 
         public bool Edit(Provider_DTO proDTO)

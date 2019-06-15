@@ -20,13 +20,22 @@ namespace SellsManager.DAL
             return dt;
         }
 
+        public DataTable LoadProduct()
+        {
+            SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM Product", con);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+
+            return dt;
+        }
+
         public bool New(Provider_DTO pro)
         {
             try
             {
                 con.Open();
-                string query = string.Format("INSERT INTO Product(name, addr, phone) VALUES ('{0}', '{1}', '{2}')",
-                    pro.Name, pro.Addr, pro.Phone);
+                string query = string.Format("INSERT INTO Provider(name, addr, phone, product) VALUES (N'{0}', N'{1}', '{2}', {3})",
+                    pro.Name, pro.Addr, pro.Phone, pro.Product);
                 SqlCommand cmd = new SqlCommand(query, con);
 
                 if (cmd.ExecuteNonQuery() > 0)
@@ -50,8 +59,8 @@ namespace SellsManager.DAL
             try
             {
                 con.Open();
-                string query = string.Format("UPDATE Provider SET name = '{0}', addr = '{1}', phone = '{2}' WHERE id = {6}",
-                    pro.Name, pro.Addr, pro.Phone, pro.Id);
+                string query = string.Format("UPDATE Provider SET name = N'{0}', addr = N'{1}', phone = '{2}', product = {3} WHERE id = {4}",
+                    pro.Name, pro.Addr, pro.Phone, pro.Product, pro.Id);
                 SqlCommand cmd = new SqlCommand(query, con);
 
                 if (cmd.ExecuteNonQuery() > 0)
@@ -75,7 +84,7 @@ namespace SellsManager.DAL
             try
             {
                 con.Open();
-                string query = string.Format("DELETE FROM Provider WHERE id = {0})", id);
+                string query = string.Format("DELETE FROM Provider WHERE id = {0}", id);
                 SqlCommand cmd = new SqlCommand(query, con);
 
                 if (cmd.ExecuteNonQuery() > 0)

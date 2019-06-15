@@ -15,3 +15,8 @@ C:\Users\User\source\repos\1612492_1612449\SellsManager\obj\Debug\SellsManager.G
 C:\Users\User\source\repos\1612492_1612449\SellsManager\obj\Debug\SellsManager.GUI.Promotion.resources
 C:\Users\User\source\repos\1612492_1612449\SellsManager\obj\Debug\SellsManager.GUI.Account.resources
 C:\Users\User\source\repos\1612492_1612449\SellsManager\obj\Debug\SellsManager.GUI.Seller.resources
+C:\Users\User\source\repos\1612492_1612449\SellsManager\obj\Debug\SellsManager.GUI.Sales.resources
+C:\Users\User\source\repos\1612492_1612449\SellsManager\obj\Debug\SellsManager.GUI.Category.resources
+C:\Users\User\source\repos\1612492_1612449\SellsManager\obj\Debug\SellsManager.GUI.FindMember.resources
+C:\Users\User\source\repos\1612492_1612449\SellsManager\obj\Debug\SellsManager.GUI.Bill.resources
+C:\Users\User\source\repos\1612492_1612449\SellsManager\obj\Debug\SellsManager.GUI.Statistics.resources

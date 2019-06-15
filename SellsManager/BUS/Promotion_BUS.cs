@@ -18,6 +18,16 @@ namespace SellsManager.BUS
             return proDAL.Load();
         }
 
+        public DataTable LoadProduct()
+        {
+            return proDAL.LoadProduct();
+        }
+
+        public bool New(Promotion_DTO proDTO)
+        {
+            return proDAL.New(proDTO);
+        }
+
         public bool Edit(Promotion_DTO proDTO)
         {
             return proDAL.Edit(proDTO);

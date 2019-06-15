@@ -11,6 +11,15 @@ namespace SellsManager.DAL
 {
     public class Product_DAL : DB_Connect
     {
+        public DataTable LoadCategory()
+        {
+            SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM Category", con);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+
+            return dt;
+        }
+
         public DataTable Load()
         {
             SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM Product", con);
@@ -25,8 +34,8 @@ namespace SellsManager.DAL
             try
             {
                 con.Open();
-                string query = string.Format("INSERT INTO Product(name, category, importPrice, exportPrice, number, provider) VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}')",
-                    pro.Name, pro.Category, pro.ImportPrice, pro.ExportPrice, pro.Number, pro.Provider);
+                string query = string.Format("INSERT INTO Product(name, category, importPrice, exportPrice, number) VALUES (N'{0}', {1}, {2}, {3}, {4})",
+                    pro.Name, pro.Category, pro.ImportPrice, pro.ExportPrice, pro.Number);
                 SqlCommand cmd = new SqlCommand(query, con);
 
                 if (cmd.ExecuteNonQuery() > 0)
@@ -50,7 +59,7 @@ namespace SellsManager.DAL
             try
             {
                 con.Open();
-                string query = string.Format("UPDATE Product SET number = '{0}' WHERE id = {1}",
+                string query = string.Format("UPDATE Product SET number = {0} WHERE id = {1}",
                     pro.Number + num, pro.Id);
                 SqlCommand cmd = new SqlCommand(query, con);
 
@@ -75,8 +84,8 @@ namespace SellsManager.DAL
             try
             {
                 con.Open();
-                string query = string.Format("UPDATE Product SET name = '{0}', category = '{1}', importPrice = '{2}', exportPrice = '{3}', number = '{4}', provider = '{5}' WHERE id = {6}",
-                    pro.Name, pro.Category, pro.ImportPrice, pro.ExportPrice, pro.Number,pro.Provider,pro.Id);
+                string query = string.Format("UPDATE Product SET name = N'{0}', category = {1}, importPrice = {2}, exportPrice = {3}, number = {4} WHERE id = {5}",
+                    pro.Name, pro.Category, pro.ImportPrice, pro.ExportPrice, pro.Number,pro.Id);
                 SqlCommand cmd = new SqlCommand(query, con);
 
                 if (cmd.ExecuteNonQuery() > 0)
@@ -89,31 +98,6 @@ namespace SellsManager.DAL
             }
             finally
             {
-                con.Close();
-            }
-
-            return false;
-        }
-
-        public bool Delete(int id)
-        {
-            try
-            {
-                con.Open();
-                string query = string.Format("DELETE FROM Product WHERE id = {0})", id);
-                SqlCommand cmd = new SqlCommand(query, con);
-
-                if (cmd.ExecuteNonQuery() > 0)
-                    return true;
-
-            }
-            catch (Exception e)
-            {
-
-            }
-            finally
-            {
-
                 con.Close();
             }
 

@@ -28,108 +28,134 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.btnNew = new System.Windows.Forms.Button();
+            this.grvAccount = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.dtpBirthday = new System.Windows.Forms.DateTimePicker();
+            this.cbbGender = new System.Windows.Forms.ComboBox();
+            this.txtAddress = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtPhone = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtIdCard = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dtpStartWoking = new System.Windows.Forms.DateTimePicker();
+            this.cbbRole = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.grvAccount)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button4
+            // btnDelete
             // 
-            this.button4.Location = new System.Drawing.Point(685, 169);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(139, 39);
-            this.button4.TabIndex = 13;
-            this.button4.Text = "DELETE";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnDelete.Location = new System.Drawing.Point(600, 244);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(139, 39);
+            this.btnDelete.TabIndex = 13;
+            this.btnDelete.Text = "DELETE";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // button3
+            // btnEdit
             // 
-            this.button3.Location = new System.Drawing.Point(685, 106);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(139, 39);
-            this.button3.TabIndex = 12;
-            this.button3.Text = "EDIT";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnEdit.Location = new System.Drawing.Point(361, 245);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(139, 39);
+            this.btnEdit.TabIndex = 12;
+            this.btnEdit.Text = "EDIT";
+            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
-            // button2
+            // btnNew
             // 
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(685, 44);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(139, 38);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "NEW";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnNew.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNew.Location = new System.Drawing.Point(122, 244);
+            this.btnNew.Name = "btnNew";
+            this.btnNew.Size = new System.Drawing.Size(139, 38);
+            this.btnNew.TabIndex = 14;
+            this.btnNew.Text = "NEW";
+            this.btnNew.UseVisualStyleBackColor = true;
+            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
-            // dataGridView1
+            // grvAccount
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(31, 244);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(804, 277);
-            this.dataGridView1.TabIndex = 11;
+            this.grvAccount.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.grvAccount.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grvAccount.Location = new System.Drawing.Point(18, 290);
+            this.grvAccount.Name = "grvAccount";
+            this.grvAccount.RowTemplate.Height = 24;
+            this.grvAccount.Size = new System.Drawing.Size(839, 231);
+            this.grvAccount.TabIndex = 11;
+            this.grvAccount.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grvAccount_CellClick);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox6);
+            this.groupBox1.Controls.Add(this.dtpStartWoking);
+            this.groupBox1.Controls.Add(this.dtpBirthday);
+            this.groupBox1.Controls.Add(this.cbbRole);
+            this.groupBox1.Controls.Add(this.cbbGender);
+            this.groupBox1.Controls.Add(this.txtAddress);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.textBox9);
+            this.groupBox1.Controls.Add(this.txtPassword);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.textBox8);
+            this.groupBox1.Controls.Add(this.txtUsername);
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.textBox7);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.textBox10);
+            this.groupBox1.Controls.Add(this.txtPhone);
             this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.textBox5);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.txtIdCard);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBox3);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtName);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(31, 13);
+            this.groupBox1.Location = new System.Drawing.Point(18, 13);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(648, 225);
+            this.groupBox1.Size = new System.Drawing.Size(839, 225);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Account Information";
             // 
-            // textBox6
+            // dtpBirthday
             // 
-            this.textBox6.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(142, 138);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(192, 28);
-            this.textBox6.TabIndex = 1;
+            this.dtpBirthday.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpBirthday.Location = new System.Drawing.Point(135, 107);
+            this.dtpBirthday.Name = "dtpBirthday";
+            this.dtpBirthday.Size = new System.Drawing.Size(281, 28);
+            this.dtpBirthday.TabIndex = 4;
+            // 
+            // cbbGender
+            // 
+            this.cbbGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbGender.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbGender.FormattingEnabled = true;
+            this.cbbGender.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.cbbGender.Location = new System.Drawing.Point(135, 69);
+            this.cbbGender.Name = "cbbGender";
+            this.cbbGender.Size = new System.Drawing.Size(281, 29);
+            this.cbbGender.TabIndex = 3;
+            // 
+            // txtAddress
+            // 
+            this.txtAddress.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAddress.Location = new System.Drawing.Point(135, 144);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(281, 28);
+            this.txtAddress.TabIndex = 1;
             // 
             // label6
             // 
@@ -141,13 +167,87 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "Address";
             // 
-            // textBox4
+            // txtPassword
             // 
-            this.textBox4.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(142, 176);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(192, 28);
-            this.textBox4.TabIndex = 1;
+            this.txtPassword.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(551, 184);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(276, 28);
+            this.txtPassword.TabIndex = 1;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(449, 184);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(88, 21);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Password";
+            // 
+            // txtUsername
+            // 
+            this.txtUsername.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername.Location = new System.Drawing.Point(551, 146);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(276, 28);
+            this.txtUsername.TabIndex = 1;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(449, 146);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(93, 21);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Username";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(449, 108);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(45, 21);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Role";
+            // 
+            // txtPhone
+            // 
+            this.txtPhone.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPhone.Location = new System.Drawing.Point(551, 32);
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Size = new System.Drawing.Size(276, 28);
+            this.txtPhone.TabIndex = 1;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(449, 32);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(62, 21);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "Phone";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(449, 70);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(96, 21);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Start date";
+            // 
+            // txtIdCard
+            // 
+            this.txtIdCard.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdCard.Location = new System.Drawing.Point(135, 181);
+            this.txtIdCard.Name = "txtIdCard";
+            this.txtIdCard.Size = new System.Drawing.Size(281, 28);
+            this.txtIdCard.TabIndex = 1;
             // 
             // label4
             // 
@@ -159,14 +259,6 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Identity Card";
             // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(142, 100);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(192, 28);
-            this.textBox3.TabIndex = 1;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -176,14 +268,6 @@
             this.label3.Size = new System.Drawing.Size(77, 21);
             this.label3.TabIndex = 0;
             this.label3.Text = "Birthday";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(142, 62);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(192, 28);
-            this.textBox2.TabIndex = 1;
             // 
             // label2
             // 
@@ -195,13 +279,13 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Gender";
             // 
-            // textBox1
+            // txtName
             // 
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(142, 24);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(192, 28);
-            this.textBox1.TabIndex = 2;
+            this.txtName.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.Location = new System.Drawing.Point(135, 32);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(281, 28);
+            this.txtName.TabIndex = 2;
             // 
             // label1
             // 
@@ -213,108 +297,40 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Name";
             // 
-            // label5
+            // dtpStartWoking
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(348, 69);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(96, 21);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Start date";
+            this.dtpStartWoking.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpStartWoking.Location = new System.Drawing.Point(551, 70);
+            this.dtpStartWoking.Name = "dtpStartWoking";
+            this.dtpStartWoking.Size = new System.Drawing.Size(276, 28);
+            this.dtpStartWoking.TabIndex = 4;
             // 
-            // textBox5
+            // cbbRole
             // 
-            this.textBox5.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(450, 62);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(192, 28);
-            this.textBox5.TabIndex = 1;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(348, 107);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(45, 21);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Role";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(450, 100);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(192, 28);
-            this.textBox7.TabIndex = 1;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(348, 145);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(93, 21);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Username";
-            // 
-            // textBox8
-            // 
-            this.textBox8.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(450, 138);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(192, 28);
-            this.textBox8.TabIndex = 1;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(348, 183);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(88, 21);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Password";
-            // 
-            // textBox9
-            // 
-            this.textBox9.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(450, 176);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(192, 28);
-            this.textBox9.TabIndex = 1;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(348, 31);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(62, 21);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "Phone";
-            // 
-            // textBox10
-            // 
-            this.textBox10.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(450, 24);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(192, 28);
-            this.textBox10.TabIndex = 1;
+            this.cbbRole.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbRole.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbRole.FormattingEnabled = true;
+            this.cbbRole.Items.AddRange(new object[] {
+            "Manager",
+            "Seller"});
+            this.cbbRole.Location = new System.Drawing.Point(551, 105);
+            this.cbbRole.Name = "cbbRole";
+            this.cbbRole.Size = new System.Drawing.Size(276, 29);
+            this.cbbRole.TabIndex = 3;
             // 
             // Account
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnEdit);
+            this.Controls.Add(this.btnNew);
+            this.Controls.Add(this.grvAccount);
             this.Controls.Add(this.groupBox1);
             this.Name = "Account";
             this.Size = new System.Drawing.Size(866, 535);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.Account_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.grvAccount)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -323,30 +339,30 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.Button btnNew;
+        private System.Windows.Forms.DataGridView grvAccount;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtIdCard;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox txtPhone;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ComboBox cbbGender;
+        private System.Windows.Forms.DateTimePicker dtpBirthday;
+        private System.Windows.Forms.DateTimePicker dtpStartWoking;
+        private System.Windows.Forms.ComboBox cbbRole;
     }
 }

@@ -47,18 +47,32 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BUS\Account_BUS.cs" />
+    <Compile Include="BUS\Bill_BUS.cs" />
+    <Compile Include="BUS\Category_BUS.cs" />
     <Compile Include="BUS\Customer_BUS.cs" />
+    <Compile Include="BUS\Login_BUS.cs" />
     <Compile Include="BUS\Product_BUS.cs" />
     <Compile Include="BUS\Promotion_BUS.cs" />
     <Compile Include="BUS\Provider_BUS.cs" />
+    <Compile Include="BUS\Sale_BUS.cs" />
+    <Compile Include="BUS\Statistics_BUS.cs" />
     <Compile Include="DAL\Account_DAL.cs" />
+    <Compile Include="DAL\Bill_DAL.cs" />
+    <Compile Include="DAL\Category_DAL.cs" />
     <Compile Include="DAL\Customer_DAL.cs" />
+    <Compile Include="DAL\Login_DAL.cs" />
     <Compile Include="DAL\Product_DAL.cs" />
     <Compile Include="DAL\Promotion_DAL.cs" />
     <Compile Include="DAL\Provider_DAL.cs" />
+    <Compile Include="DAL\Sale_DAL.cs" />
+    <Compile Include="DAL\Statistics_DAL.cs" />
     <Compile Include="DTO\Account_DTO.cs" />
+    <Compile Include="DTO\Bill_DTO.cs" />
+    <Compile Include="DTO\Category_DTO.cs" />
     <Compile Include="DTO\Customer_DTO.cs" />
     <Compile Include="DAL\DB_Connect.cs" />
+    <Compile Include="DTO\Item_DTO.cs" />
+    <Compile Include="DTO\Login_DTO.cs" />
     <Compile Include="DTO\Product_DTO.cs" />
     <Compile Include="DTO\Promotion_DTO.cs" />
     <Compile Include="DTO\Provider_DTO.cs" />
@@ -67,6 +81,18 @@
     </Compile>
     <Compile Include="GUI\Account.Designer.cs">
       <DependentUpon>Account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Bill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Bill.Designer.cs">
+      <DependentUpon>Bill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Category.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Category.Designer.cs">
+      <DependentUpon>Category.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\Customers.cs">
       <SubType>UserControl</SubType>
@@ -79,6 +105,12 @@
     </Compile>
     <Compile Include="GUI\Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FindMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FindMember.Designer.cs">
+      <DependentUpon>FindMember.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\Login.cs">
       <SubType>Form</SubType>
@@ -104,22 +136,43 @@
     <Compile Include="GUI\Provider.Designer.cs">
       <DependentUpon>Provider.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Sales.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Sales.Designer.cs">
+      <DependentUpon>Sales.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Seller.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\Seller.Designer.cs">
       <DependentUpon>Seller.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Statistics.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Statistics.Designer.cs">
+      <DependentUpon>Statistics.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\Account.resx">
       <DependentUpon>Account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Bill.resx">
+      <DependentUpon>Bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Category.resx">
+      <DependentUpon>Category.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Customers.resx">
       <DependentUpon>Customers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FindMember.resx">
+      <DependentUpon>FindMember.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -133,8 +186,14 @@
     <EmbeddedResource Include="GUI\Provider.resx">
       <DependentUpon>Provider.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Sales.resx">
+      <DependentUpon>Sales.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Seller.resx">
       <DependentUpon>Seller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Statistics.resx">
+      <DependentUpon>Statistics.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

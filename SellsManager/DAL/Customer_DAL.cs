@@ -25,8 +25,8 @@ namespace SellsManager.DAL
             try
             {
                 con.Open();
-                string query = string.Format("INSERT INTO Customer(name, gender, birthday, addr, cardId) VALUES ('{0}', '{1}', '{2}', '{3}', '{4}')",
-                    pro.Name, pro.Gender, pro.Birthday, pro.Addr, pro.CardId);
+                string query = string.Format("INSERT INTO Customer(name, gender, birthday, addr, cardId, point) VALUES (N'{0}', N'{1}', '{2}', N'{3}', '{4}', {5})",
+                    pro.Name, pro.Gender, pro.Birthday, pro.Addr, pro.CardId, pro.Point);
                 SqlCommand cmd = new SqlCommand(query, con);
 
                 if (cmd.ExecuteNonQuery() > 0)
@@ -50,7 +50,7 @@ namespace SellsManager.DAL
             try
             {
                 con.Open();
-                string query = string.Format("UPDATE Customer SET name = '{0}', gender = '{1}', birthday = '{2}', addr = '{3}', cardId = '{4}' WHERE id = {5}",
+                string query = string.Format("UPDATE Customer SET name = N'{0}', gender = N'{1}', birthday = '{2}', addr = N'{3}', cardId = '{4}' WHERE id = {5}",
                     pro.Name, pro.Gender, pro.Birthday, pro.Addr, pro.CardId, pro.Id);
                 SqlCommand cmd = new SqlCommand(query, con);
 
@@ -75,7 +75,7 @@ namespace SellsManager.DAL
             try
             {
                 con.Open();
-                string query = string.Format("DELETE FROM Customer WHERE id = {0})", id);
+                string query = string.Format("DELETE FROM Customer WHERE id = {0}", id);
                 SqlCommand cmd = new SqlCommand(query, con);
 
                 if (cmd.ExecuteNonQuery() > 0)

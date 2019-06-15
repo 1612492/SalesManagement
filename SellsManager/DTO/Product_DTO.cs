@@ -10,13 +10,12 @@ namespace SellsManager.DTO
     {
         private int id;
         private string name;
-        private string category;
-        private string importPrice;
-        private string exportPrice;
+        private int category;
+        private int importPrice;
+        private int exportPrice;
         private int number;
-        private int provider;
 
-        public Product_DTO(int id, string name, string category, string importPrice, string exportPrice, int number, int provider)
+        public Product_DTO(int id, string name, int category, int importPrice, int exportPrice, int number)
         {
             this.id = id;
             this.name = name;
@@ -24,15 +23,13 @@ namespace SellsManager.DTO
             this.importPrice = importPrice;
             this.exportPrice = exportPrice;
             this.number = number;
-            this.provider = provider;
         }
 
         public int Id { get => id; set => id = value; }
         public string Name { get => name; set => name = value; }
-        public string Category { get => category; set => category = value; }
-        public string ImportPrice { get => importPrice; set => importPrice = value; }
-        public string ExportPrice { get => exportPrice; set => exportPrice = value; }
+        public int Category { get => category; set => category = value; }
+        public int ImportPrice { get => importPrice; set => importPrice = value; }
+        public int ExportPrice { get => exportPrice; set => exportPrice = value; }
         public int Number { get => number; set => number = value; }
-        public int Provider { get => provider; set => provider = value; }
     }
 }

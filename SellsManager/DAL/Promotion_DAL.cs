@@ -20,12 +20,21 @@ namespace SellsManager.DAL
             return dt;
         }
 
+        public DataTable LoadProduct()
+        {
+            SqlDataAdapter adapter = new SqlDataAdapter("SELECT id, name FROM Product", con);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+
+            return dt;
+        }
+
         public bool New(Promotion_DTO pro)
         {
             try
             {
                 con.Open();
-                string query = string.Format("INSERT INTO Promotion(name, dateStart, dateEnd, product, endow, description) VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}')",
+                string query = string.Format("INSERT INTO Promotion(name, dateStart, dateEnd, product, endow, dcription) VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}')",
                     pro.Name, pro.DateStart, pro.DateEnd, pro.Product, pro.Endow, pro.Description);
                 SqlCommand cmd = new SqlCommand(query, con);
 
@@ -50,7 +59,7 @@ namespace SellsManager.DAL
             try
             {
                 con.Open();
-                string query = string.Format("UPDATE Promotion SET name = '{0}', dateStart = '{1}', dateEnd = '{2}', product = '{3}', endow = '{4}', description = '{5}' WHERE id = {6}",
+                string query = string.Format("UPDATE Promotion SET name = '{0}', dateStart = '{1}', dateEnd = '{2}', product = '{3}', endow = '{4}', dcription = '{5}' WHERE id = {6}",
                     pro.Name, pro.DateStart, pro.DateEnd, pro.Product, pro.Endow, pro.Description, pro.Id);
                 SqlCommand cmd = new SqlCommand(query, con);
 
@@ -75,7 +84,7 @@ namespace SellsManager.DAL
             try
             {
                 con.Open();
-                string query = string.Format("DELETE FROM Promotion WHERE id = {0})", id);
+                string query = string.Format("DELETE FROM Promotion WHERE id = {0}", id);
                 SqlCommand cmd = new SqlCommand(query, con);
 
                 if (cmd.ExecuteNonQuery() > 0)

@@ -11,21 +11,26 @@ namespace SellsManager.BUS
 {
     public class Account_BUS
     {
-        Account_DAL proDAL = new Account_DAL();
+        Account_DAL accDAL = new Account_DAL();
 
         public DataTable Load()
         {
-            return proDAL.Load();
+            return accDAL.Load();
+        }
+
+        public bool New(Account_DTO proDTO)
+        {
+            return accDAL.New(proDTO);
         }
 
         public bool Edit(Account_DTO proDTO)
         {
-            return proDAL.Edit(proDTO);
+            return accDAL.Edit(proDTO);
         }
 
         public bool Delete(int id)
         {
-            return proDAL.Delete(id);
+            return accDAL.Delete(id);
         }
     }
 }
